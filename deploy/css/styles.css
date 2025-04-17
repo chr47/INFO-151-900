@@ -397,3 +397,43 @@ textarea {
 #hero section #hero-card h5 {
   color: var(--nightblue);
 }
+
+/* =============
+    Packages
+============= */
+#packages {
+  background-color: var(--lily);
+}
+#packages h1 {
+  color: var(--nightblue);
+}
+#packages #packages-button-container {
+  background-color: var(--white);
+}
+#packages button {
+  border: none;
+}
+#packages #left {
+  background-color: var(--white);
+  color: var(--grey);
+}
+#packages #right {
+  background-color: var(--aqua);
+  color: var(--white);
+}
+#packages #package-card-container .package-card {
+  background-color: var(--ghost);
+  border: 1px solid var(--white);
+}
+#packages #package-card-container p {
+  color: var(--nightblue);
+}
+#packages #package-card-container h3 {
+  color: var(--aqua);
+}
+#packages #package-card-container h4 {
+  color: var(--grey);
+}
+#packages #package-card-container .selected {
+  background-color: var(--white);
+}

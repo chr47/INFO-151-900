@@ -338,9 +338,30 @@ html {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.section-title {
+  color: var(--nightblue);
+  font-size: 3.125rem;
+  line-height: 4.0625rem;
+}
+
+/* .open-sans-<uniquifier > {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+} */
 /* =============
     Buttons
 ============= */
+a {
+  text-decoration: none;
+}
+
 /* =============
     Forms
 ============= */
@@ -376,26 +397,42 @@ textarea {
 #hero {
   background-color: var(--lily);
 }
-#hero section article h1 {
-  color: var(--nightblue);
+#hero section article {
+  /* h1 {
+    color: var(--nightblue);
+    font-size: helpers.rem-calc(50);
+  } */
 }
 #hero section article p {
   color: var(--grey);
+  font-weight: 600;
+  line-height: 1.75rem;
 }
 #hero section article a:link,
 #hero section article a:visited {
   background-color: var(--nightblue);
   color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 600;
 }
 #hero section article button {
   background-color: var(--white);
   border: none;
+  font-size: 0.875rem;
+  font-weight: 600;
 }
 #hero section #hero-card {
   background-color: var(--snowdrop);
 }
 #hero section #hero-card h5 {
   color: var(--nightblue);
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+#hero section #hero-card p {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.5rem;
 }
 
 /* =============
@@ -403,9 +440,9 @@ textarea {
 ============= */
 #packages {
   background-color: var(--lily);
-}
-#packages h1 {
-  color: var(--nightblue);
+  /* h1 {
+    color: var(--nightblue);
+  } */
 }
 #packages #packages-button-container {
   background-color: var(--white);
@@ -443,9 +480,9 @@ textarea {
 ============= */
 #newsletter {
   background-color: var(--lily);
-}
-#newsletter h1 {
-  color: var(--nightblue);
+  /* h1 {
+    color: var(--nightblue);
+  } */
 }
 #newsletter p {
   color: var(--grey);

@@ -559,3 +559,86 @@ textarea {
   font-weight: 600;
   font-size: 0.875rem;
 }
+
+/* =============
+    Communication
+============= */
+#communication {
+  padding: 100px 24px;
+  text-align: center;
+}
+#communication p {
+  margin-top: 24px;
+  margin-bottom: 48px;
+  color: var(--grey);
+  font-size: 1rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+/* =============
+    Processes
+============= */
+#processes {
+  padding: 100px 24px;
+}
+#processes #top-content {
+  text-align: center;
+  margin-bottom: 12px;
+}
+#processes #text {
+  text-align: center;
+  color: var(--grey);
+  margin-bottom: 24px;
+}
+#processes #processes-card-container .process-card {
+  border: 1px solid var(--ghost);
+  margin-bottom: 24px;
+  padding: 30px;
+  border-radius: 14px;
+}
+#processes #processes-card-container img {
+  margin-bottom: 50px;
+}
+#processes #processes-card-container h3 {
+  font-size: 1.5rem;
+  line-height: 2.125rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+#processes #processes-card-container p {
+  color: var(--grey);
+  font-size: 1rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+/* =============
+    About
+============= */
+#about {
+  padding: 100px 24px;
+}
+#about #top-content {
+  margin-bottom: 16px;
+}
+#about #text {
+  color: var(--grey);
+}
+#about #about-card-container {
+  margin-bottom: 69px;
+}
+#about #about-card-container .about-card {
+  margin-top: 16px;
+}
+#about #about-card-container h3 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+#about #about-card-container p {
+  color: var(--grey);
+  font-size: 1rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}

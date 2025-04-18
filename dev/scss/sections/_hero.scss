@@ -5,6 +5,7 @@
 
 #hero {
   background-color: var(--lily);
+  padding: 56px 24px;
 
   section {
     article {
@@ -17,6 +18,8 @@
         color: var(--grey);
         font-weight: 600;
         line-height: helpers.rem-calc(28);
+        margin-top: 24px;
+        margin-bottom: 24px;
       }
 
       a:link,
@@ -25,20 +28,30 @@
         color: var(--white);
         font-size: helpers.rem-calc(14);
         font-weight: 600;
+        padding: 22px 36px;
+        border-radius: 6px;
+
+        // code for week 4
+        display: inline-block;
       }
       a:hover,
       a:focus {
       }
       button {
+        margin-left: 30px;
         background-color: var(--white);
         border: none;
-        font-size: helpers.rem-calc(14);
-        font-weight: 600;
+        height: 60px;
+        width: 60px;
+        border-radius: 100%;
       }
     }
 
     #hero-card {
       background-color: var(--snowdrop);
+      margin-top: 70px;
+      padding: 24px 20px;
+      border-radius: 12px;
 
       h5 {
         color: var(--nightblue);
@@ -49,7 +62,7 @@
       p {
         font-size: helpers.rem-calc(14);
         font-weight: 600;
-        line-height: helpers.rem-calc(24);
+        //line-height: helpers.rem-calc(24);
       }
     }
   }

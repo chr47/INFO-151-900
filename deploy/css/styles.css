@@ -676,29 +676,83 @@ textarea {
     Newsletter
 ============= */
 #newsletter {
+  margin-top: 60px;
+}
+#newsletter #newsletter-content {
   background-color: var(--lily);
-  /* h1 {
-    color: var(--nightblue);
-  } */
+  padding: 60px 16px;
 }
-#newsletter p {
-  color: var(--grey);
-  font-weight: 600;
-  line-height: 1.75rem;
+@media (min-width: 768px) {
+  #newsletter #newsletter-content {
+    padding: 60px 20vw;
+  }
 }
-#newsletter form input {
+@media (min-width: 992px) {
+  #newsletter #newsletter-content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 65% 60px auto;
+    grid-template-columns: 65% auto;
+    padding: 0px 0px;
+    gap: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  #newsletter #newsletter-content {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 992px) {
+  #newsletter #newsletter-content #newsletter-left {
+    padding: 60px 0px 0px 60px;
+  }
+}
+#newsletter #newsletter-content #newsletter-left p {
+  margin: 16px 0;
+}
+#newsletter #newsletter-content #newsletter-left form input {
   border: none;
   color: var(--grey);
   font-weight: 600;
+  width: 100%;
+  padding: 24px 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  margin-bottom: 16px;
 }
-#newsletter form button {
+#newsletter #newsletter-content #newsletter-left form ::-placeholder {
+  color: var(--grey);
+  opacity: 1;
+}
+#newsletter #newsletter-content #newsletter-left form ::-ms-input-placeholder {
+  color: var(--grey);
+}
+#newsletter #newsletter-content #newsletter-left form div {
+  text-align: right;
+}
+#newsletter #newsletter-content #newsletter-left form button {
+  height: 60px;
+  width: 150px;
   border: none;
   background-color: var(--nightblue);
   color: var(--white);
   font-weight: 600;
   font-size: 0.875rem;
+  border-radius: 5%;
+  margin-left: auto;
+  display: block;
 }
-
+#newsletter #newsletter-content aside {
+  display: none;
+}
+@media (min-width: 992px) {
+  #newsletter #newsletter-content aside {
+    display: block;
+    margin-top: -50px;
+  }
+}
 /* =============
     Communication
 ============= */

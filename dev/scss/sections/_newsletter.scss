@@ -4,31 +4,84 @@
 @use "../helpers";
 
 #newsletter {
-  background-color: var(--lily);
-
-  /* h1 {
-    color: var(--nightblue);
-  } */
-
-  p {
-    color: var(--grey);
-    font-weight: 600;
-    line-height: helpers.rem-calc(28);
-  }
-
-  form {
-    input {
-      border: none;
-      color: var(--grey);
-      font-weight: 600;
+  margin-top: 60px;
+  #newsletter-content {
+    background-color: var(--lily);
+    padding: 60px 16px;
+    @include helpers.md {
+      padding: 60px 20vw;
     }
 
-    button {
-      border: none;
-      background-color: var(--nightblue);
-      color: var(--white);
-      font-weight: 600;
-      font-size: helpers.rem-calc(14);
+    @include helpers.lg {
+      display: grid;
+      grid-template-columns: 65% auto;
+      padding: 0px 0px;
+      gap: 60px;
+    }
+
+    @include helpers.xl {
+      width: 1200px;
+      margin: 0 auto;
+    }
+
+    #newsletter-left {
+      @include helpers.lg {
+        padding: 60px 0px 0px 60px;
+      }
+
+      p {
+        margin: 16px 0;
+      }
+
+      form {
+        input {
+          border: none;
+          color: var(--grey);
+          font-weight: 600;
+          width: 100%;
+          padding: 24px 8px;
+          box-sizing: border-box;
+          border-radius: 8px;
+          margin-bottom: 16px;
+        }
+
+        ::-placeholder {
+          color: var(--grey);
+          opacity: 1;
+        }
+
+        ::-ms-input-placeholder {
+          color: var(--grey);
+        }
+
+        div {
+          text-align: right;
+        }
+
+        button {
+          height: 60px;
+          width: 150px;
+          border: none;
+          background-color: var(--nightblue);
+          color: var(--white);
+          font-weight: 600;
+          font-size: helpers.rem-calc(14);
+          border-radius: 5%;
+          margin-left: auto;
+          display: block;
+        }
+      }
+    }
+    aside {
+      display: none;
+
+      @include helpers.lg {
+        display: block;
+        margin-top: -50px;
+      }
+
+      img {
+      }
     }
   }
 }

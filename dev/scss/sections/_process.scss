@@ -4,7 +4,9 @@
 @use "../helpers";
 
 #processes {
-  padding: 100px 24px;
+  @include helpers.xl {
+    padding: 100px 24px;
+  }
 
   #top-content {
     text-align: center;
@@ -15,9 +17,34 @@
     text-align: center;
     color: var(--grey);
     margin-bottom: 24px;
+
+    @include helpers.md {
+      padding: 0px 220px;
+    }
   }
 
   #processes-card-container {
+    @include helpers.md {
+      display: grid;
+      grid-template-areas:
+        "card-1"
+        "card-2"
+        "card-3";
+      padding: 0px 100px;
+    }
+
+    @include helpers.xl {
+      display: grid;
+      grid-template-areas: "card-1 card-2 card-3";
+      padding: 0px 50px;
+      gap: 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    @include helpers.md {
+    }
+
     .process-card {
       border: 1px solid var(--ghost);
       margin-bottom: 24px;

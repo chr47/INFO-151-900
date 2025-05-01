@@ -566,6 +566,27 @@ textarea {
 #packages #top-content {
   text-align: center;
 }
+@media (min-width: 1200px) {
+  #packages #top-content {
+    width: 1200px;
+    margin: 0 auto 70px;
+  }
+}
+@media (min-width: 992px) {
+  #packages #top-content {
+    margin-bottom: 70px;
+  }
+}
+@media (min-width: 768px) {
+  #packages #top-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 #packages #top-content #packages-button-container {
   background-color: var(--white);
   display: inline-block;
@@ -573,16 +594,21 @@ textarea {
   padding: 8px;
   border-radius: 10px;
 }
-#packages #top-content button {
+@media (min-width: 768px) {
+  #packages #top-content #packages-button-container {
+    margin-left: auto;
+  }
+}
+#packages #top-content #packages-button-container button {
   border: none;
 }
-#packages #top-content #left {
+#packages #top-content #packages-button-container #left {
   background-color: var(--white);
   color: var(--grey);
   padding: 13px 18px;
   border-radius: 8px;
 }
-#packages #top-content #right {
+#packages #top-content #packages-button-container #right {
   background-color: var(--aqua);
   color: var(--white);
   padding: 13px 18px;
@@ -612,6 +638,12 @@ textarea {
   border: 1px solid var(--white);
   margin-bottom: 48px;
   padding: 16px;
+}
+#packages #package-card-container .package-card .package-card-image {
+  width: 100%;
+  height: 273px;
+  background-size: cover;
+  background-position: center;
   border-radius: 14px;
 }
 #packages #package-card-container p {
@@ -621,17 +653,42 @@ textarea {
   line-height: 1.75rem;
   margin: 20px 0 16px 0;
 }
-#packages #package-card-container h3 {
+#packages #package-card-container .package-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#packages #package-card-container .package-info .user-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#packages #package-card-container .package-info .user-icons li {
+  height: 36px;
+  width: 36px;
+  border: 1px solid var(--white);
+  border-radius: 100%;
+  margin-right: -15px;
+}
+#packages #package-card-container .package-info h3 {
+  margin-left: auto;
   color: var(--aqua);
   font-size: 0.875rem;
   line-height: 1.75rem;
   font-weight: 600;
 }
-#packages #package-card-container h4 {
+#packages #package-card-container .package-info h4 {
   color: var(--grey);
   font-size: 0.875rem;
   line-height: 1.75rem;
   font-weight: 600;
+  margin-left: 20px;
 }
 #packages #package-card-container .selected {
   background-color: var(--white);
@@ -641,10 +698,37 @@ textarea {
     grid-area: card-1;
   }
 }
+#packages #package-card-container #card-1 .package-card-image {
+  background-image: url(../img/packages/card1.jpg);
+}
+#packages #package-card-container #card-1 .user1 {
+  background-image: url(../img/packages/user1.jpg);
+}
+#packages #package-card-container #card-1 .user3 {
+  background-image: url(../img/packages/user3.jpg);
+  background-position: 80% 80%;
+}
+#packages #package-card-container #card-1 .user2 {
+  background-image: url(../img/packages/user2.jpg);
+}
 @media (min-width: 768px) {
   #packages #package-card-container #card-2 {
     grid-area: card-2;
   }
+}
+#packages #package-card-container #card-2 .package-card-image {
+  background-image: url(../img/packages/card3.jpg);
+}
+#packages #package-card-container #card-2 .user5 {
+  background-image: url(../img/packages/user5.jpg);
+  background-position: center 35%;
+}
+#packages #package-card-container #card-2 .user3 {
+  background-image: url(../img/packages/user3.jpg);
+  background-position: 80% 80%;
+}
+#packages #package-card-container #card-2 .user4 {
+  background-image: url(../img/packages/user4.jpg);
 }
 @media (min-width: 768px) {
   #packages #package-card-container #card-3 {
@@ -684,6 +768,20 @@ textarea {
     -ms-grid-column: 5;
     -ms-grid-column-span: 1;
   }
+}
+#packages #package-card-container #card-3 .package-card-image {
+  background-image: url(../img/packages/card2.jpg);
+}
+#packages #package-card-container #card-3 .user5 {
+  background-image: url(../img/packages/user5.jpg);
+  background-position: center 35%;
+}
+#packages #package-card-container #card-3 .user3 {
+  background-image: url(../img/packages/user3.jpg);
+  background-position: 80% 80%;
+}
+#packages #package-card-container #card-3 .user4 {
+  background-image: url(../img/packages/user4.jpg);
 }
 
 /* =============

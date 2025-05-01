@@ -34,6 +34,13 @@
       }
 
       form {
+        @include helpers.md {
+          display: flex;
+          align-items: center;
+          padding: 12px 8px;
+          background-color: var(--white);
+        }
+
         input {
           border: none;
           color: var(--grey);
@@ -43,6 +50,9 @@
           box-sizing: border-box;
           border-radius: 8px;
           margin-bottom: 16px;
+          @include helpers.md {
+            margin-bottom: 0;
+          }
         }
 
         ::-placeholder {

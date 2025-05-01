@@ -823,6 +823,18 @@ textarea {
 #newsletter #newsletter-content #newsletter-left p {
   margin: 16px 0;
 }
+@media (min-width: 768px) {
+  #newsletter #newsletter-content #newsletter-left form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 12px 8px;
+    background-color: var(--white);
+  }
+}
 #newsletter #newsletter-content #newsletter-left form input {
   border: none;
   color: var(--grey);
@@ -833,6 +845,11 @@ textarea {
           box-sizing: border-box;
   border-radius: 8px;
   margin-bottom: 16px;
+}
+@media (min-width: 768px) {
+  #newsletter #newsletter-content #newsletter-left form input {
+    margin-bottom: 0;
+  }
 }
 #newsletter #newsletter-content #newsletter-left form ::-placeholder {
   color: var(--grey);
@@ -986,6 +1003,9 @@ textarea {
 /* =============
     About
 ============= */
+#about {
+  margin: 24px;
+}
 @media (min-width: 768px) {
   #about {
     display: -ms-grid;
@@ -1010,10 +1030,27 @@ textarea {
   color: var(--grey);
 }
 #about #about-card-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 69px;
 }
 #about #about-card-container .about-card {
-  margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+}
+#about #about-card-container .about-card img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 20px;
+}
+#about #about-card-container .about-card .about-text {
+  margin-left: 20px;
 }
 #about #about-card-container h3 {
   font-size: 1.25rem;

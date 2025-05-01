@@ -504,14 +504,28 @@ textarea {
   padding: 24px 20px;
   border-radius: 12px;
 }
-#hero #hero-content-container section #hero-card h5 {
+#hero #hero-content-container section #hero-card #infobar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#hero #hero-content-container section #hero-card #infobar #star {
+  margin-left: auto;
+  margin-right: 8px;
+}
+#hero #hero-content-container section #hero-card #infobar h5 {
   color: var(--nightblue);
   font-weight: 600;
   font-size: 0.875rem;
 }
-#hero #hero-content-container section #hero-card p {
+#hero #hero-content-container section #hero-card #card-info {
+  color: var(--grey);
   font-size: 0.875rem;
   font-weight: 600;
+  margin-bottom: 0;
 }
 @media (min-width: 768px) {
   #hero #hero-content-container aside {
